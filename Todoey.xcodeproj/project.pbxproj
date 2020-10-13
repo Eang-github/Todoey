@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9C7D49E425358B8900680D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D49E325358B8900680D0D /* AppDelegate.swift */; };
-		9C7D49E625358B8900680D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D49E525358B8900680D0D /* SceneDelegate.swift */; };
-		9C7D49E825358B8900680D0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D49E725358B8900680D0D /* ViewController.swift */; };
-		9C7D49EB25358B8900680D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7D49E925358B8900680D0D /* Main.storyboard */; };
+		9C7D49E825358B8900680D0D /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D49E725358B8900680D0D /* TodoListViewController.swift */; };
 		9C7D49ED25358B8900680D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7D49EC25358B8900680D0D /* Assets.xcassets */; };
 		9C7D49F025358B8900680D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7D49EE25358B8900680D0D /* LaunchScreen.storyboard */; };
+		9C7D49F8253594CE00680D0D /* didTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D49F7253594CE00680D0D /* didTap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C7D49E025358B8900680D0D /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7D49E325358B8900680D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C7D49E525358B8900680D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C7D49E725358B8900680D0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C7D49EA25358B8900680D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C7D49E725358B8900680D0D /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		9C7D49EC25358B8900680D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7D49EF25358B8900680D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7D49F125358B8900680D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7D49F7253594CE00680D0D /* didTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = didTap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,38 @@
 		9C7D49E225358B8900680D0D /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				9C7D49E325358B8900680D0D /* AppDelegate.swift */,
-				9C7D49E525358B8900680D0D /* SceneDelegate.swift */,
-				9C7D49E725358B8900680D0D /* ViewController.swift */,
-				9C7D49E925358B8900680D0D /* Main.storyboard */,
+				9C7D49F9253594DF00680D0D /* Resources */,
+				9C7D49FA253594EA00680D0D /* Extensions */,
+				9C7D49FB253594F200680D0D /* View */,
 				9C7D49EC25358B8900680D0D /* Assets.xcassets */,
 				9C7D49EE25358B8900680D0D /* LaunchScreen.storyboard */,
 				9C7D49F125358B8900680D0D /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		9C7D49F9253594DF00680D0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D49E325358B8900680D0D /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C7D49FA253594EA00680D0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D49F7253594CE00680D0D /* didTap.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C7D49FB253594F200680D0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D49E725358B8900680D0D /* TodoListViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				9C7D49F025358B8900680D0D /* LaunchScreen.storyboard in Resources */,
 				9C7D49ED25358B8900680D0D /* Assets.xcassets in Resources */,
-				9C7D49EB25358B8900680D0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7D49E825358B8900680D0D /* ViewController.swift in Sources */,
+				9C7D49E825358B8900680D0D /* TodoListViewController.swift in Sources */,
+				9C7D49F8253594CE00680D0D /* didTap.swift in Sources */,
 				9C7D49E425358B8900680D0D /* AppDelegate.swift in Sources */,
-				9C7D49E625358B8900680D0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C7D49E925358B8900680D0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C7D49EA25358B8900680D0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C7D49EE25358B8900680D0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z4H5T9U34;
 				INFOPLIST_FILE = Todoey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z4H5T9U34;
 				INFOPLIST_FILE = Todoey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
